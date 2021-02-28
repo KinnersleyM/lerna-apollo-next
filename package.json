@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "lerna run --scope @app/web dev --stream",
+    "dev:server": "lerna run --scope @app/server dev --stream",
+    "dev": "lerna run dev --stream"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
